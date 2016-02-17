@@ -16,7 +16,7 @@ namespace CI.Demo.Tests
             [Fact]
             public void ValidatesNameIsNotNull()
             {
-                Assert.Throws(() =>
+                Assert.Throws<Exception>(() =>
                 {
                     new Demo.Feature(null);
                 });
@@ -25,7 +25,7 @@ namespace CI.Demo.Tests
             [Fact]
             public void ValidatesNameIsNotEmpty()
             {
-                Assert.Throws(() =>
+                Assert.Throws<Exception>(() =>
                 {
                     new Demo.Feature("");
                 });
